@@ -27,27 +27,43 @@ export const mockData = {
     },
     {
       id: 4,
-      name: "Arsenal",
-      description: "Fast-paced FPS combat game",
+      name: "Arise Crossover",
+      description: "Anime crossover fighting game with multiple universes",
       image: "https://images.unsplash.com/photo-1613255990799-f6141f60cdad?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwyfHxnYW1lJTIwdGh1bWJuYWlsc3xlbnwwfHx8fDE3NTU3NzYzOTV8MA&ixlib=rb-4.1.0&q=85",
       status: "Active",
-      features: ["Aimbot", "ESP", "No recoil", "Speed hack"]
+      features: ["Auto-combo", "Character unlocker", "Skill macro", "Tournament bot"]
     },
     {
       id: 5,
-      name: "Jailbreak",
-      description: "Prison escape and crime simulation",
+      name: "Dead Rails",
+      description: "Zombie apocalypse survival on abandoned railways",
       image: "https://images.unsplash.com/photo-1698064534597-e039edaa0717?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxyb2Jsb3glMjBnYW1pbmd8ZW58MHx8fHwxNzU1Nzc2Mzg2fDA&ixlib=rb-4.1.0&q=85",
       status: "Active",
-      features: ["Auto-rob", "Teleport hack", "Infinite money", "Vehicle spawner"]
+      features: ["Auto-aim", "Resource collector", "Safe zone finder", "Zombie tracker"]
     },
     {
       id: 6,
-      name: "Adopt Me",
-      description: "Pet collecting and adoption game",
+      name: "Meme Sea",
+      description: "Hilarious pirate adventure with meme references",
       image: "https://images.pexels.com/photos/15290406/pexels-photo-15290406.jpeg",
       status: "Active",
-      features: ["Pet duplicator", "Money hack", "Age up pets", "Teleport to players"]
+      features: ["Auto-quest", "Treasure hunter", "Ship upgrader", "PvP assist"]
+    },
+    {
+      id: 7,
+      name: "Universal Scripts",
+      description: "Works across multiple Roblox games",
+      image: "https://images.unsplash.com/photo-1656639969809-ebc544c96955?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwxfHxyb2Jsb3glMjBnYW1pbmd8ZW58MHx8fHwxNzU1Nzc2Mzg2fDA&ixlib=rb-4.1.0&q=85",
+      status: "Active",
+      features: ["Speed hack", "Fly mode", "Noclip", "Infinite jump"]
+    },
+    {
+      id: 8,
+      name: "And Much More",
+      description: "Over 100+ supported games and growing",
+      image: "https://images.unsplash.com/photo-1599548291260-8a88e3d3b095?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwyfHxyb2Jsb3glMjBnYW1pbmd8ZW58MHx8fHwxNzU1Nzc2Mzg2fDA&ixlib=rb-4.1.0&q=85",
+      status: "Coming Soon",
+      features: ["Auto-updates", "Game detection", "Custom configs", "Community scripts"]
     }
   ],
   
