@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import GameCard from './components/GameCard';
 import ScriptViewer from './components/ScriptViewer';
-import ExecutionSteps from './components/ExecutionSteps';
+
 import CompatibilitySection from './components/CompatibilitySection';
 import SecurityNotice from './components/SecurityNotice';
 import DeveloperSection from './components/DeveloperSection';
