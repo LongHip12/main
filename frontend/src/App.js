@@ -8,7 +8,7 @@ import ScriptViewer from './components/ScriptViewer';
 import CompatibilitySection from './components/CompatibilitySection';
 import SecurityNotice from './components/SecurityNotice';
 import DeveloperSection from './components/DeveloperSection';
-import { Toaster } from './components/ui/toaster';
+import { Github, Youtube, Facebook, MessageCircle } from 'lucide-react';
 import { mockData } from './data/mock';
 
 const Home = () => {
