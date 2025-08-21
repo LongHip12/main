@@ -4,6 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import GameCard from './components/GameCard';
 import ScriptViewer from './components/ScriptViewer';
+import ExecutionSteps from './components/ExecutionSteps';
+import CompatibilitySection from './components/CompatibilitySection';
+import SecurityNotice from './components/SecurityNotice';
+import DeveloperSection from './components/DeveloperSection';
 import { Toaster } from './components/ui/toaster';
 import { mockData } from './data/mock';
 
@@ -22,6 +26,12 @@ const Home = () => {
       {/* Header Section */}
       <Header onGetScript={scrollToScript} />
       
+      {/* Execution Steps */}
+      <ExecutionSteps />
+      
+      {/* Compatibility Section */}
+      <CompatibilitySection />
+      
       {/* Games Section */}
       <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="container mx-auto px-6">
@@ -34,7 +44,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {mockData.games.map((game) => (
               <GameCard key={game.id} game={game} />
             ))}
@@ -47,14 +57,22 @@ const Home = () => {
         <ScriptViewer script={mockData.loaderScript} />
       </section>
 
+      {/* Security Notice */}
+      <SecurityNotice />
+
+      {/* Developer Section */}
+      <DeveloperSection />
+
       {/* Footer */}
       <footer className="bg-slate-900 border-t border-slate-800 py-8">
         <div className="container mx-auto px-6 text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="p-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg">
-              <span className="text-white font-bold text-sm">LH</span>
-            </div>
-            <span className="text-white font-bold text-lg">Lonely Hub</span>
+          <div className="flex items-center justify-center space-x-3 mb-4">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_game-script-loader-1/artifacts/4rhrtofz_Picsart_25-05-02_12-33-27-196.png" 
+              alt="Lonely Hub Logo" 
+              className="w-10 h-10 object-contain"
+            />
+            <span className="text-white font-bold text-xl">Lonely Hub</span>
           </div>
           <p className="text-slate-400 text-sm">
             © 2025 Lonely Hub. Premium Roblox Scripts. Use responsibly.
