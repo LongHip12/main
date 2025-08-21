@@ -13,11 +13,13 @@ const Header = ({ onGetScript }) => {
       <div className="relative z-10 container mx-auto px-6 py-20">
         {/* Logo */}
         <div className="absolute top-6 left-6">
-          <div className="flex items-center space-x-2 text-2xl font-bold text-white hover:text-purple-300 transition-colors duration-300">
-            <div className="p-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg">
-              <Code className="w-6 h-6" />
-            </div>
-            <span>Lonely Hub</span>
+          <div className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_game-script-loader-1/artifacts/4rhrtofz_Picsart_25-05-02_12-33-27-196.png" 
+              alt="Lonely Hub Logo" 
+              className="w-12 h-12 object-contain"
+            />
+            <span className="text-2xl font-bold text-white">Lonely Hub</span>
           </div>
         </div>
 
