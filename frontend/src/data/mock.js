@@ -69,7 +69,7 @@ export const mockData = {
   
   loaderScript: `-- Lonely Hub Loader Script
 -- Premium Roblox Script Hub
--- Supports: Doors, Blox Fruits, Grow a Garden & More!
+-- Supports: Doors, Blox Fruits, Grow a Garden, Arise Crossover, Dead Rails, Meme Sea & More!
 
 local LonelyHub = {}
 LonelyHub.Version = "v2.1.0"
@@ -77,6 +77,9 @@ LonelyHub.Games = {
     [6839171747] = "Doors", 
     [2753915549] = "BloxFruits",
     [1234567890] = "GrowAGarden",
+    [5678901234] = "AriseCrossover",
+    [9876543210] = "DeadRails",
+    [1357924680] = "MemeSea",
     [286090429] = "Arsenal",
     [606849621] = "Jailbreak",
     [920587237] = "AdoptMe"
@@ -91,8 +94,8 @@ function LonelyHub:Load()
         print("🎮 Loading Lonely Hub for: " .. gameName)
         self:LoadGameScript(gameName)
     else
-        print("❌ Game not supported by Lonely Hub")
-        self:ShowSupportedGames()
+        print("🌍 Loading Universal Scripts...")
+        self:LoadUniversalScript()
     end
 end
 
@@ -112,12 +115,29 @@ function LonelyHub:LoadGameScript(gameName)
     end
 end
 
+-- Load universal script for unsupported games
+function LonelyHub:LoadUniversalScript()
+    local universalUrl = "https://raw.githubusercontent.com/LonelyHub/Scripts/main/Universal.lua"
+    
+    local success, script = pcall(function()
+        return game:HttpGet(universalUrl)
+    end)
+    
+    if success then
+        loadstring(script)()
+        print("✅ Universal script loaded successfully!")
+    else
+        print("❌ Failed to load universal script")
+    end
+end
+
 -- Show supported games
 function LonelyHub:ShowSupportedGames()
     print("🎯 Lonely Hub - Supported Games:")
     for id, name in pairs(self.Games) do
         print("  • " .. name .. " (ID: " .. id .. ")")
     end
+    print("  • Universal Scripts for other games")
 end
 
 -- Initialize and load
