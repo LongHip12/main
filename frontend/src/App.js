@@ -26,9 +26,6 @@ const Home = () => {
       {/* Header Section */}
       <Header onGetScript={scrollToScript} />
       
-      {/* Execution Steps */}
-      <ExecutionSteps />
-      
       {/* Compatibility Section */}
       <CompatibilitySection />
       
