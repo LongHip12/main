@@ -33,7 +33,10 @@ const Header = ({ onGetScript }) => {
           <p className="text-xl md:text-2xl text-purple-200 mb-8 max-w-3xl mx-auto leading-relaxed">
             The ultimate Roblox script hub supporting <span className="font-semibold text-white">Doors</span>, 
             <span className="font-semibold text-white"> Blox Fruits</span>, 
-            <span className="font-semibold text-white"> Grow a Garden</span> and many more games!
+            <span className="font-semibold text-white"> Grow a Garden</span>,
+            <span className="font-semibold text-white"> Arise Crossover</span>,
+            <span className="font-semibold text-white"> Dead Rails</span>,
+            <span className="font-semibold text-white"> Meme Sea</span> and many more games!
           </p>
           
           {/* Features */}
