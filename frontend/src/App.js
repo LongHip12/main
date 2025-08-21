@@ -9,6 +9,7 @@ import CompatibilitySection from './components/CompatibilitySection';
 import SecurityNotice from './components/SecurityNotice';
 import DeveloperSection from './components/DeveloperSection';
 import { Github, Youtube, Facebook, MessageCircle } from 'lucide-react';
+import { Toaster } from './components/ui/toaster';
 import { mockData } from './data/mock';
 
 const Home = () => {
